@@ -5,10 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>CGPA Calculator &verbar; Calculate your CGPA</title>
+
+    <style>
+      form {
+        width: 20rem;
+        height: 25rem;
+        width: 50rem;
+        height: 50rem;
+      }
+
+      input {
+        display: block;
+        margin-bottom: 1rem;
+        padding: .4rem 1rem;
+      }
+
+      button {
+        outline: none;
+        padding: 0.5rem 1.5rem;
+        font-size: 1rem;
+        border: 0;
+        background: linear-gradient(to right, #004445, #a3f7bf);
+        border-radius: 1rem;
+        color: #fff;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
+    <h1></h1>
     <form>
-      <input id="gpaValue" type="text" />
+      <input id="gpaValue" type="text" placeholder="Enter your GPA" />
       <button id="submitCgpa" type="submit">Submit</button>
       <div id="displayCgpa">
         Display result

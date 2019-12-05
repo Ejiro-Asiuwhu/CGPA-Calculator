@@ -8,7 +8,9 @@ var displayResult = document.querySelector('#displayCgpa');
 
 cgpaButton.addEventListener('click', function (event) {
     event.preventDefault();
-    console.log('Clicked');
+    var inputValue = cgpaInput.value;
+    console.log(inputValue);
+
 });
 
 
@@ -46,7 +48,7 @@ function checkCgpa(gpa) {
 
 
 
-// Switch
+// Switch Statement
 
 
 function gpaChecker(gpaVal) {
