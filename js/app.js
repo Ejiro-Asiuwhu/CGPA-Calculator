@@ -1,3 +1,17 @@
+var cgpaInput = document.querySelector('#gpaValue');
+var cgpaButton = document.querySelector('#submitCgpa');
+var displayResult = document.querySelector('#displayCgpa');
+
+
+
+// cgpaButton.addEventListener
+
+cgpaButton.addEventListener('click', function (event) {
+    event.preventDefault();
+    console.log('Clicked');
+});
+
+
 
 function checkCgpa(gpa) {
     if (gpa === 5 || (gpa >= 4.5 && gpa <= 5)) {
@@ -26,4 +40,39 @@ function checkCgpa(gpa) {
     else {
         return 'Invalid Input';
     }
-} 
+}
+
+
+
+
+
+// Switch
+
+
+function gpaChecker(gpaVal) {
+    switch (true) {
+        case (gpaVal === 5 || (gpaVal >= 4.5 && gpaVal <= 5)):
+            return 'First Class';
+
+        case (gpaVal >= 3.5 && gpaVal <= 4.49):
+            return '2.1';
+
+        case (gpaVal >= 2.4 && gpaVal <= 3.49):
+            return '2.2';
+
+        case (gpaVal >= 1.5 && gpaVal <= 2.39):
+            return 'Third Class';
+
+        case (gpaVal <= 1.49 && gpaVal >= 0):
+            return 'Pass';
+
+        case (gpaVal < 0):
+            return 'Invalid Number';
+
+        default:
+            return 'Invalid Input';
+    }
+
+    return gpaVal;
+}
+
