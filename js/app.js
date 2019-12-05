@@ -11,5 +11,8 @@ function checkCgpa(gpa) {
     else if (gpa >= 2.4 && gpa <= 3.49) {
         return '2.2';
     }
-  
+    else if (gpa >= 1.5 && gpa <= 2.39) {
+        return '3rd class';
+    }
+
 } 
