@@ -19,11 +19,11 @@ function checkCgpa(gpa) {
         return 'Pass';
     }
 
-    // else if (gpa <= 0) {
-    //     return 'Invalid Number';
-    // }
+    else if (gpa < 0) {
+        return 'Invalid Number';
+    }
 
-    // else {
-    //     return 'Invalid Input';
-    // }
+    else {
+        return 'Invalid Input';
+    }
 } 
