@@ -4,4 +4,8 @@ function checkCgpa(gpa) {
         return 'First Class';
     }
 
+    else if (gpa >= 3.5 && gpa <= 4.49) {
+        return '2.1';
+    }
+
 } 
