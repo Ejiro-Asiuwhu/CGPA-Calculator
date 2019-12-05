@@ -15,9 +15,13 @@ function checkCgpa(gpa) {
         return '3rd class';
     }
 
-    else if (gpa <= 1.49) {
+    else if (gpa <= 1.49 && gpa >= 0) {
         return 'Pass';
     }
+
+    // else if (gpa <= 0) {
+    //     return 'Invalid Number';
+    // }
 
     // else {
     //     return 'Invalid Input';
